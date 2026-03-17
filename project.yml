@@ -1,0 +1,66 @@
+name: LLMDash
+options:
+  bundleIdPrefix: com.llmdash
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    PRODUCT_COPYRIGHT: "Copyright chadchae"
+
+targets:
+  LLMDash:
+    type: application
+    platform: macOS
+    sources:
+      - LLMDash
+      - Shared
+    settings:
+      base:
+        INFOPLIST_FILE: LLMDash/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.llmdash.app
+        PRODUCT_NAME: LLMDash
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES
+        COMBINE_HIDPI_IMAGES: YES
+    entitlements:
+      path: LLMDash/LLMDash.entitlements
+      properties:
+        com.apple.security.network.client: true
+        com.apple.security.application-groups:
+          - group.com.llmdash
+    dependencies:
+      - target: LLMDashWidgetExtension
+
+  LLMDashWidgetExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - LLMDashWidget
+      - Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.llmdash.app.widget
+        PRODUCT_NAME: LLMDashWidgetExtension
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+    info:
+      path: LLMDashWidget/Info.plist
+      properties:
+        CFBundleDisplayName: LLMDash Widget
+        CFBundlePackageType: XPC!
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: LLMDashWidget/LLMDashWidget.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.network.client: true
+        com.apple.security.application-groups:
+          - group.com.llmdash

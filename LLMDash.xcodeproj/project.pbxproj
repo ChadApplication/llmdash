@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0541E392129E3656FA2761C5 /* AccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C177A70A87121A0BC5F6C08 /* AccountStore.swift */; };
+		09C03300056A6017930E4B93 /* SharedBalanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B889C69AB85D9F5D6729350 /* SharedBalanceData.swift */; };
+		131C80F41377BF8E510AA374 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E6E69366790191DAD706F /* DashboardView.swift */; };
+		160CC31C2BC2320FD2225595 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167363EE3DC8161835ACDEF /* SettingsView.swift */; };
+		3B980BDC38593B32687A0574 /* WebLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2A502DAF3AA4C258B5AA0 /* WebLoginView.swift */; };
+		58AE073C613BE9C5923F2621 /* UsageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCECF2B50C74B31895A5C9 /* UsageData.swift */; };
+		6F57D917E6ECC8EE50BD8103 /* WebBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBDF2D8CBBD089D8387092E /* WebBalanceFetcher.swift */; };
+		86250B2EFD5412952B59B034 /* LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85A3B833B0E7D8F0CB38F2D /* LLMProvider.swift */; };
+		9A54296E883794036E787957 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD327F33783042AF5C51769 /* AppState.swift */; };
+		9A73EA4E12683D2D81967D84 /* LLMDashWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA53AB94914BD86965D0188 /* LLMDashWidget.swift */; };
+		A526B46953926EC300D2F683 /* ProviderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940179D2EC8D47258479A48 /* ProviderCardView.swift */; };
+		ABD60CC10532B2E84AB6956A /* SharedBalanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B889C69AB85D9F5D6729350 /* SharedBalanceData.swift */; };
+		BF43FABABF822208DE7F3D89 /* LLMDashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA67CDCC53404BC5AF16CB1 /* LLMDashApp.swift */; };
+		ED112D62D004A860EEB120D7 /* LLMDashWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 31E9E6A3F6FC147B2358F957 /* LLMDashWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6520A3E03C1E35F6D36CD7C /* BalanceAutoRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB46D749D84019D2935A7 /* BalanceAutoRefresher.swift */; };
+		FABEAD02B34583505FB077ED /* UsageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034774B4DF92F89955D81035 /* UsageService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0092AA3EE50B707207ABB36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CEBC1BE340E9F7A7B5798BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B83FC97FF3A14591CFBB8BA9;
+			remoteInfo = LLMDashWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73E89E94D9FE8C6B4BA5F82D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ED112D62D004A860EEB120D7 /* LLMDashWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0167363EE3DC8161835ACDEF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		034774B4DF92F89955D81035 /* UsageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageService.swift; sourceTree = "<group>"; };
+		04DCECF2B50C74B31895A5C9 /* UsageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageData.swift; sourceTree = "<group>"; };
+		0B889C69AB85D9F5D6729350 /* SharedBalanceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedBalanceData.swift; sourceTree = "<group>"; };
+		1D446E49E0C35BBCA51F0157 /* LLMDashWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LLMDashWidget.entitlements; sourceTree = "<group>"; };
+		1DA67CDCC53404BC5AF16CB1 /* LLMDashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMDashApp.swift; sourceTree = "<group>"; };
+		20639E16789E183C15A7EF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2C177A70A87121A0BC5F6C08 /* AccountStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStore.swift; sourceTree = "<group>"; };
+		31E9E6A3F6FC147B2358F957 /* LLMDashWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LLMDashWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA53AB94914BD86965D0188 /* LLMDashWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMDashWidget.swift; sourceTree = "<group>"; };
+		4445BF31142A410EFD44ABFE /* LLMDash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LLMDash.entitlements; sourceTree = "<group>"; };
+		461E6E69366790191DAD706F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		6BBDF2D8CBBD089D8387092E /* WebBalanceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBalanceFetcher.swift; sourceTree = "<group>"; };
+		77767E35216D90153D762ACF /* LLMDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLMDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B3B98C0CBFF08A534DA630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93AAB46D749D84019D2935A7 /* BalanceAutoRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceAutoRefresher.swift; sourceTree = "<group>"; };
+		C940179D2EC8D47258479A48 /* ProviderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderCardView.swift; sourceTree = "<group>"; };
+		DDF2A502DAF3AA4C258B5AA0 /* WebLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLoginView.swift; sourceTree = "<group>"; };
+		F85A3B833B0E7D8F0CB38F2D /* LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMProvider.swift; sourceTree = "<group>"; };
+		FCD327F33783042AF5C51769 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		16C088D222E1CB34FEBCA93A /* LLMDashWidget */ = {
+			isa = PBXGroup;
+			children = (
+				88B3B98C0CBFF08A534DA630 /* Info.plist */,
+				1D446E49E0C35BBCA51F0157 /* LLMDashWidget.entitlements */,
+				3CA53AB94914BD86965D0188 /* LLMDashWidget.swift */,
+			);
+			path = LLMDashWidget;
+			sourceTree = "<group>";
+		};
+		296782B3EB87913FA50F7162 = {
+			isa = PBXGroup;
+			children = (
+				6B74640274012AF466AA0681 /* LLMDash */,
+				16C088D222E1CB34FEBCA93A /* LLMDashWidget */,
+				CF44CA3F5CBE1E042E069EAE /* Shared */,
+				B9116009C76A93BA14ACC096 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		589E6A5A9075B1A0B8537175 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C177A70A87121A0BC5F6C08 /* AccountStore.swift */,
+				93AAB46D749D84019D2935A7 /* BalanceAutoRefresher.swift */,
+				034774B4DF92F89955D81035 /* UsageService.swift */,
+				6BBDF2D8CBBD089D8387092E /* WebBalanceFetcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6B74640274012AF466AA0681 /* LLMDash */ = {
+			isa = PBXGroup;
+			children = (
+				20639E16789E183C15A7EF88 /* Info.plist */,
+				4445BF31142A410EFD44ABFE /* LLMDash.entitlements */,
+				1DA67CDCC53404BC5AF16CB1 /* LLMDashApp.swift */,
+				A9332AC10E71316BF0576C7A /* Models */,
+				589E6A5A9075B1A0B8537175 /* Services */,
+				71F786F06E228E92106B2D18 /* Views */,
+			);
+			path = LLMDash;
+			sourceTree = "<group>";
+		};
+		71F786F06E228E92106B2D18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				461E6E69366790191DAD706F /* DashboardView.swift */,
+				C940179D2EC8D47258479A48 /* ProviderCardView.swift */,
+				0167363EE3DC8161835ACDEF /* SettingsView.swift */,
+				DDF2A502DAF3AA4C258B5AA0 /* WebLoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9332AC10E71316BF0576C7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCD327F33783042AF5C51769 /* AppState.swift */,
+				F85A3B833B0E7D8F0CB38F2D /* LLMProvider.swift */,
+				04DCECF2B50C74B31895A5C9 /* UsageData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9116009C76A93BA14ACC096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77767E35216D90153D762ACF /* LLMDash.app */,
+				31E9E6A3F6FC147B2358F957 /* LLMDashWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF44CA3F5CBE1E042E069EAE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0B889C69AB85D9F5D6729350 /* SharedBalanceData.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		341B2E814CFC963C1A4B87D0 /* LLMDash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21B2179692035E75C341015 /* Build configuration list for PBXNativeTarget "LLMDash" */;
+			buildPhases = (
+				20144CB43689A2437263F37D /* Sources */,
+				73E89E94D9FE8C6B4BA5F82D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AE1E03407EFCF9EAFE72C77 /* PBXTargetDependency */,
+			);
+			name = LLMDash;
+			packageProductDependencies = (
+			);
+			productName = LLMDash;
+			productReference = 77767E35216D90153D762ACF /* LLMDash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B83FC97FF3A14591CFBB8BA9 /* LLMDashWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ED6565CAD9C67CA3FB050FF /* Build configuration list for PBXNativeTarget "LLMDashWidgetExtension" */;
+			buildPhases = (
+				C2E39600EC7ABCDF3C5E9153 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLMDashWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = LLMDashWidgetExtension;
+			productReference = 31E9E6A3F6FC147B2358F957 /* LLMDashWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CEBC1BE340E9F7A7B5798BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					341B2E814CFC963C1A4B87D0 = {
+						ProvisioningStyle = Automatic;
+					};
+					B83FC97FF3A14591CFBB8BA9 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1178135B0D04172759490588 /* Build configuration list for PBXProject "LLMDash" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 296782B3EB87913FA50F7162;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B9116009C76A93BA14ACC096 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				341B2E814CFC963C1A4B87D0 /* LLMDash */,
+				B83FC97FF3A14591CFBB8BA9 /* LLMDashWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20144CB43689A2437263F37D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0541E392129E3656FA2761C5 /* AccountStore.swift in Sources */,
+				9A54296E883794036E787957 /* AppState.swift in Sources */,
+				F6520A3E03C1E35F6D36CD7C /* BalanceAutoRefresher.swift in Sources */,
+				131C80F41377BF8E510AA374 /* DashboardView.swift in Sources */,
+				BF43FABABF822208DE7F3D89 /* LLMDashApp.swift in Sources */,
+				86250B2EFD5412952B59B034 /* LLMProvider.swift in Sources */,
+				A526B46953926EC300D2F683 /* ProviderCardView.swift in Sources */,
+				160CC31C2BC2320FD2225595 /* SettingsView.swift in Sources */,
+				ABD60CC10532B2E84AB6956A /* SharedBalanceData.swift in Sources */,
+				58AE073C613BE9C5923F2621 /* UsageData.swift in Sources */,
+				FABEAD02B34583505FB077ED /* UsageService.swift in Sources */,
+				6F57D917E6ECC8EE50BD8103 /* WebBalanceFetcher.swift in Sources */,
+				3B980BDC38593B32687A0574 /* WebLoginView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2E39600EC7ABCDF3C5E9153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A73EA4E12683D2D81967D84 /* LLMDashWidget.swift in Sources */,
+				09C03300056A6017930E4B93 /* SharedBalanceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AE1E03407EFCF9EAFE72C77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B83FC97FF3A14591CFBB8BA9 /* LLMDashWidgetExtension */;
+			targetProxy = 0092AA3EE50B707207ABB36B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		485AFC7FBDD0D21E0C555E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		89B5DB4596CCE7E991F147E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		9162D0021F028EA2549C4ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LLMDash/LLMDash.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J5HY6J45A2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = LLMDash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.llmdash.app;
+				PRODUCT_NAME = LLMDash;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB081C23EB03F919589878AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LLMDashWidget/LLMDashWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J5HY6J45A2;
+				INFOPLIST_FILE = LLMDashWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.llmdash.app.widget;
+				PRODUCT_NAME = LLMDashWidgetExtension;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		B36D0915236684FF36F899FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LLMDash/LLMDash.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J5HY6J45A2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = LLMDash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.llmdash.app;
+				PRODUCT_NAME = LLMDash;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F12CCE360743673211A0EEE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LLMDashWidget/LLMDashWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J5HY6J45A2;
+				INFOPLIST_FILE = LLMDashWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.llmdash.app.widget;
+				PRODUCT_NAME = LLMDashWidgetExtension;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1178135B0D04172759490588 /* Build configuration list for PBXProject "LLMDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89B5DB4596CCE7E991F147E6 /* Debug */,
+				485AFC7FBDD0D21E0C555E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7ED6565CAD9C67CA3FB050FF /* Build configuration list for PBXNativeTarget "LLMDashWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB081C23EB03F919589878AB /* Debug */,
+				F12CCE360743673211A0EEE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E21B2179692035E75C341015 /* Build configuration list for PBXNativeTarget "LLMDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36D0915236684FF36F899FA /* Debug */,
+				9162D0021F028EA2549C4ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CEBC1BE340E9F7A7B5798BC /* Project object */;
+}
